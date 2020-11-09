@@ -1,0 +1,26 @@
+{#TODO: Add header to make it look nicer#}
+{% extends 'base.html' %}
+
+{% block body %}
+
+    <div>
+        <p>Feel free to answer any of these questions to help the gift giver know what you might like.</p>
+        <p>Feel free to also leave any of them blank if you don't want to answer them. (Except for Name and Email)</p>
+    </div>
+
+    <div class="main-form">
+        <form method="POST">
+            {% csrf_token %}
+{#                <ul>#}
+{#                    {% for field in form.fields %}#}
+{#                        <li>{{ field.verbose_name }}: </li>#}
+{#                    {% endfor %}#}
+{#                </ul>#}
+            <table>
+                {{ form }}
+            </table>
+            <button>Submit</button>
+        </form>
+    </div>
+
+{% endblock %}

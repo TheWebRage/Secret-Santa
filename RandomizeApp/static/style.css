@@ -1,0 +1,16 @@
+input {
+
+}
+
+.main-form {
+    width: 85%;
+    margin: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+label {
+    float: right;
+}
